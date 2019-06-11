@@ -1,0 +1,20 @@
+{
+  "name": "gethtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "package": "electron-packager . test  --arch=x64  --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules",
+    "start": "node changeMod.js && npm run-script package"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.0.1",
+    "electron": "^5.0.3",
+    "electron-packager": "^13.1.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "path": "^0.12.7"
+  }
+}
