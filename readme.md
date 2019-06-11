@@ -1,11 +1,7 @@
-安装node
-
+### 1、安装node
+### 2、把项目拷入project
 ```
 npm install
 npm run start
 ```
-
-安装依赖  
-把项目拷入project
-
-输出在了out文件夹
+### 3、输出在了out文件夹
