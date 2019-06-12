@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--多行溢出隐藏显示...(跨浏览器兼容+伪元素定位)-->
+<div class="box text-box3">
+    <p>目录结构清晰是首要目标，至于命名只要能达到表意的目的即可。目录结构</p>            
+</div>
+<style>.text-box3 p{
+    position: relative;
+    line-height: 1.4em;        /*行高和height成倍数，这里以三行文本超出隐藏举例*/
+    height: 4.2em;
+    overflow: hidden;
+}
+.text-box3 p::after{         /*若要兼容IE8需用:after*/
+    content: "...";          /*替换内容比较灵活*/
+    position: absolute;
+    bottom: 2px;
+    right:5px;
+    padding: 0 3px;
+    background:#fff;         /*颜色和文字背景保持一致*/
+    box-shadow: 0 0 10px #fff;  /*边缘处理*/
+
+}
+div.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    color: #333;
+    line-height: 1.8;
+    margin:30px auto;
+}
+
+</style>
+
+</body>
+</html>
