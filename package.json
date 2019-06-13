@@ -7,7 +7,6 @@
     "package": "electron-packager . test  --arch=x64  --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules",
     "start": "node changeMod.js && npm run-script package",
     "pub": "node changeMod.js"
-
   },
   "author": "",
   "license": "ISC",
